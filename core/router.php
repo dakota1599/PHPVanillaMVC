@@ -34,7 +34,7 @@ class Router{
 
 	protected function toAction($class, $method){
 		$class = new $class();
-		$class->$method();
+		return $class->$method();
 	}
 
 }
