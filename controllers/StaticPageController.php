@@ -4,7 +4,7 @@
 class StaticPageController{
 
     public function home(){
-        return $this->View("home");
+	require View("home");
     }
 
     public function about(){
