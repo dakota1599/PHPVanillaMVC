@@ -1,6 +1,5 @@
 <?php
 
-require "controllers/StaticPageController.php";
 
 class Router{
 
