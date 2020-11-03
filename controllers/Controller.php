@@ -9,7 +9,7 @@ class Controller{
         
     }
 
-    protected function View($fileName){
+    protected function View($fileName, array $bag = []){
 	    return "views/$fileName.view.php";
     }
 
