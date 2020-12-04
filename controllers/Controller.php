@@ -10,7 +10,17 @@ class Controller{
     }
 
     protected function View($fileName, array $bag = []){
-	    return "views/$fileName.view.php";
+
+        //This iterates through the bag and instantiates each key as a variable.
+        foreach($bag as $key => $value){
+            $$key = $value;
+        }
+
+        //Global web variable.
+        $web = 'https://production.dakotashapiro.info/';
+
+        //Requires the necessary filen under the naming convention.
+	    require "views/$fileName.view.php";
     }
 
 
