@@ -19,7 +19,7 @@ class Controller{
         //Global web variable.
         $web = 'https://production.dakotashapiro.info/';
 
-        //Requires the necessary filen under the naming convention.
+        //Requires the necessary file under the naming convention.
 	    require "views/$fileName.view.php";
     }
 
